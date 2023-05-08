@@ -28,7 +28,7 @@ git commit -m "{コメント}" #ブランチにコードを登録
 #### githubに上げるとき
 
 ~~~
-git remote origin https://{githubのユーザーネーム}@github.com/takaya-hirano-hayashibeLabo/manipulator.git #リモートの登録 (やってないときだけ)
+git remote add origin https://{githubのユーザーネーム}@github.com/takaya-hirano-hayashibeLabo/manipulator.git #リモートの登録 (やってないときだけ)
 git push origin {ブランチ名} #リモートにローカルの変更を登録
 ~~~
 
