@@ -1,8 +1,8 @@
-#Github
+# Github
 
 ## 基本操作
 
-#### 自分のアカウントを登録したとき
+#### 自分のアカウントを登録するとき
 
 ~~~
 git config --global user.name {githubのユーザーネーム} #ユーザーネームの登録
@@ -13,7 +13,7 @@ git config --global user.email {githubのメールアドレス} #ユーザーメ
 
 ~~~
 git init #ローカルリポジトリの初期化 (まだやってないときだけ)
-git pull https://github.com/takaya-hirano-hayashibeLabo/manipulator.git (リモ―トから取ってくる)
+git pull https://github.com/takaya-hirano-hayashibeLabo/manipulator.git #リモ―トからコードを全部取ってくる
 ~~~
 
 #### ローカルにコードを登録するとき
