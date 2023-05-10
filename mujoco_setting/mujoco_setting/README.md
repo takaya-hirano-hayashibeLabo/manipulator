@@ -18,6 +18,8 @@ C:\Users\{自分のユーザーネーム}
 
 に「.mujoco」フォルダを作成します。
 
+<img src="img/img3.png" width=720>
+
 ### 作ったのに.mujocoファイルが見えないとき
 
 隠しフォルダを見える用に設定します。
@@ -42,7 +44,9 @@ https://www.roboti.us/license.html
 
 「Activation Key」をクリックしてアクセスキーをダウンロードします。
 
-## 6. mujoco-pyのpip install
+## 
+
+## 7. mujoco-pyのpip install
 
 pip install mujoco-py==2.1.2.14
 
