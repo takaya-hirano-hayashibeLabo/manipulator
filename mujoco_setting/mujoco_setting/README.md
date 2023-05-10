@@ -12,6 +12,8 @@ https://github.com/deepmind/mujoco/releases/tag/2.1.0
 
 「mujoco210-windows-x86_64.zip」をダウンロード&解凍します。(どこでもいい)
 
+<img src="img/download_mujoco.png">
+
 ## 2. .mujocoフォルダの作成
 
 C:\Users\{自分のユーザーネーム}
