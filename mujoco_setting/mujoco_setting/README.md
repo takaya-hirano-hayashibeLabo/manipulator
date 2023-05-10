@@ -14,7 +14,7 @@ https://github.com/deepmind/mujoco/releases/tag/2.1.0
 
 「mujoco210-windows-x86_64.zip」をダウンロード&解凍します。(どこでもいい)
 
-<img src="img/download_mujoco.png">
+<img src="img/download_mujoco.png" width=720>
 
 ## 2. .mujocoフォルダの作成
 
@@ -22,7 +22,7 @@ C:\Users\{自分のユーザーネーム}
 
 に「.mujoco」フォルダを作成します。
 
-<img src="img/create_dot_mujoco.png" >
+<img src="img/create_dot_mujoco.png" width=720>
 
 ### 作ったのに.mujocoファイルが見えないとき
 
@@ -32,9 +32,13 @@ C:\Users\{自分のユーザーネーム}
 
 今作った .mujoco フォルダの中に「mujoco210」フォルダを作成します。
 
+<img src="img/create_mujoco210.png" width=720>
+
 ## 4. mujoco210フォルダにダウンロードしたファイルをコピー
 
 ダウンロードしたファイルの中身をmujoco210フォルダの中にコピーします。
+
+<img src="img/copy_contents.png" width=720>
 
 ## 5. mujocoのライセンスキーの取得
 
