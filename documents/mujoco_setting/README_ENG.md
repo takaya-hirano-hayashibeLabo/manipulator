@@ -163,7 +163,7 @@ https://visualstudio.microsoft.com/ja/thank-you-downloading-visual-studio/?sku=C
 
 (Click to download automatically.)
 
-After the download is complete click "vs_community_XXXXXXXXXXXX.exe" and install it.
+After the download is complete, click "vs_community_XXXXXXXXXXXX.exe" and install it.
 
 It takes much time ,so wait patiently.
 
