@@ -18,7 +18,7 @@ C:\Users\{自分のユーザーネーム}
 
 に「.mujoco」フォルダを作成します。
 
-<img src="img/img3.png" width=720>
+<img src="img/img3.png" >
 
 ### 作ったのに.mujocoファイルが見えないとき
 
