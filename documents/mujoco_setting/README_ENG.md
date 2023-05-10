@@ -81,7 +81,7 @@ C:\Users\{User name}\.mujoco\mujoco210\bin
 
 then click "OK".
 
-(In Windows "\" is "¥")
+(In Windows "$\$" is "¥")
 
 <img src="img/add_mujoco_path.png" width=720>
 
