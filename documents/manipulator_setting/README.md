@@ -48,4 +48,8 @@ from gym.envs.mujoco.kinova import KinovaEnv
 
 ## 3 Run test.py
 
-Type "python test.py" at at the commandprompt.
+Type
+~~~
+python test.py
+~~~
+at at the commandprompt.
