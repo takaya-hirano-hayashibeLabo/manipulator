@@ -142,7 +142,7 @@ if __name__=="__main__":
 
 上手くいくと、4脚のアリがバタバタする動画がでます。
 
-<img src="movie/ant_mov.png" width=720>
+<img src="movie/ant_mov.gif" width=720>
 
 
 
