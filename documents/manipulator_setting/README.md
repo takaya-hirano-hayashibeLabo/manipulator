@@ -29,21 +29,21 @@ Put "Gen3Robotiq.xml" and "gen3","robotiq" to "~\anaconda3\envs\{env name}\lib\p
 ### 2.1 Overwrite _init_ (1)
 
 Write the following to "~\anaconda3\envs\manipulator\lib\python3.8\site-packages\gym\envs\__init__.py".
-
+~~~
 register(
     id='Kinova-v0',
     entry_point='gym.envs.mujoco:KinovaEnv',
     max_episode_steps=50,
 )
-
+~~~
 <img src="imgs/img2.1.png" width=720>
 
 ### 2.2 Overwrite _init_ (2)
 
 Write the following to "~\anaconda3\envs\manipulator\lib\python3.8\site-packages\gym\envs\mujoco\__init__.py".
-
+~~~
 from gym.envs.mujoco.kinova import KinovaEnv
-
+~~~
 <img src="imgs/img2.2.png" width=720>
 
 ## 3 Run test.py
