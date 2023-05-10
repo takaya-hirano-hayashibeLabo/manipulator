@@ -10,7 +10,7 @@ gymをいれたら、次にmujocoを入れます。
 
 https://github.com/deepmind/mujoco/releases/tag/2.1.0
 
-「mujoco200_win64」をダウンロードします。(どこでもいい)
+「mujoco210-windows-x86_64.zip」をダウンロードします。(どこでもいい)
 
 ## 2. .mujocoフォルダの作成
 
@@ -24,7 +24,7 @@ C:\Users\{自分のユーザーネーム}
 
 ## 3. mujoco200フォルダの作成
 
-今作った .mujoco フォルダの中に「mujoco200」
+今作った .mujoco フォルダの中に「mujoco200」フォルダを作成します。
 
 
 ## mujocoのライセンスキーの取得
