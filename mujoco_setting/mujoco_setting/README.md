@@ -4,6 +4,8 @@ gymをいれたら、次にmujocoを入れます。
 
 ざっくりとした違いは、gymは2Dで、mujocoは3Dです。
 
+おそらく死ぬほどエラーが出ますが頑張って入れます。
+
 ## 1. mujocoダウンロード
 
 ↓こちらのリンクにアクセスします。
@@ -20,7 +22,7 @@ C:\Users\{自分のユーザーネーム}
 
 に「.mujoco」フォルダを作成します。
 
-<img src="img/img3.png" >
+<img src="img/create_dot_mujoco.png" >
 
 ### 作ったのに.mujocoファイルが見えないとき
 
