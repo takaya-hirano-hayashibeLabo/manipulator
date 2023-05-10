@@ -83,13 +83,16 @@ mujocoのパスをパソコンの環境設定に登録していきます。
 「新規」ボタンをクリックし、
 
 ~~~
-C:\Users\{ユーザーネーム}\.mujoco\mujoco210\bin
+C:\Users\{ユーザーネーム}\.mujoco\mujoco210\bin 
 ~~~
 
 を追加し、「OK」をクリックします。
 
+(「\」はWindowsキーだと「¥」を押す)
+
 <img src="img/add_mujoco_path.png" width=720>
 
+これでpathが通ったのパソコンを再起動しときましょう。
 
 ## 7. mujoco-pyのpip install
 
