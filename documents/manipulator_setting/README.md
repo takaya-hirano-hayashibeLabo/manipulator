@@ -8,7 +8,7 @@ Create workspace folder wherever you like.
 
 ### 1.2 Put files to workspace folder
 
-Put "test.py" and "controller.py" to workspace folder.
+Put "test.py", "controller_quiz.py" and "trajectory_quiz.py" to workspace folder.
 
 <img src="imgs/img1.2.png" width=720>
 
