@@ -96,6 +96,8 @@ C:\Users\{ユーザーネーム}\.mujoco\mujoco210\bin
 
 mujocoに必要なライブラリをインストールします。
 
+### (1)
+
 VSCodeからターミナルを開きます。
 
 ※comandpromptを開く。powershellじゃダメ。
@@ -107,6 +109,8 @@ conda activate manipulator-env
 ~~~
 
 <img src="img/activate_conda.png" width=720>
+
+### (2)
 
 pipでmujoco-pyをインストールします。
 
@@ -157,10 +161,6 @@ error: Microsoft Visual C++ 14.0 or greater is required. Get it with "Microsoft 
 ~~~
 
 これはC++のビルドツールがないエラーなので、「Visual Studio」をインストールしていきます。
-
-※Visual StudioをインストールするとC++のビルドツールが一緒に入ってきます。
-
-※C++ビルドツールだけインストールすることもできますが、うまくいかなかったのでVisual Studioごと入れたほうが無難です。
 
 ↓こちらのリンクをクリックし、「Visual Studio」をダウンロードします。
 
