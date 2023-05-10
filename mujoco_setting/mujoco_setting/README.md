@@ -4,8 +4,6 @@ gymをいれたら、次にmujocoを入れます。
 
 ざっくりとした違いは、gymは2Dで、mujocoは3Dです。
 
-おそらく死ぬほどエラーが出ますが頑張って入れます。
-
 ## 1. mujocoダウンロード
 
 ↓こちらのリンクにアクセスします。
@@ -96,6 +94,24 @@ C:\Users\{ユーザーネーム}\.mujoco\mujoco210\bin
 
 ## 8. mujoco-pyのpip install
 
+mujocoに必要なライブラリをインストールします。
+
+VSCodeからターミナルを開きます。
+
+※comandpromptを開く。powershellじゃダメ。
+
+pythonの仮想環境が有効化されてない時はactivateします。
+
+~~~
+conda activate manipulator-env
+~~~
+
+<img src="img/activate_conda.png" width=720>
+
+pipでmujoco-pyをインストールします。
+
+バージョンは必ず2.1.2.14にします。
+
 ~~~
 pip install mujoco-py==2.1.2.14
 ~~~
@@ -152,3 +168,5 @@ https://visualstudio.microsoft.com/ja/thank-you-downloading-visual-studio/?sku=C
 ダウンロードが完了したら vs_community_XXXXXXXXXXXX.exeをクリックしてインストールします。
 
 そこそこ時間がかかるのでしばらく待ちましょう。
+
+インストールが完了したら再起動し、もう一度テストプログラムを実行しましょう。
