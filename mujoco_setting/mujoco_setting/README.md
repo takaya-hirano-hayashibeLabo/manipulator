@@ -96,7 +96,9 @@ C:\Users\{ユーザーネーム}\.mujoco\mujoco210\bin
 
 ## 8. mujoco-pyのpip install
 
+~~~
 pip install mujoco-py==2.1.2.14
+~~~
 
 ## 一旦テストプログラムを動かしてみる
 
