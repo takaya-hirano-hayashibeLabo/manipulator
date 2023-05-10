@@ -94,7 +94,7 @@ C:\Users\{ユーザーネーム}\.mujoco\mujoco210\bin
 
 これでpathが通ったのパソコンを再起動しときましょう。
 
-## 7. mujoco-pyのpip install
+## 8. mujoco-pyのpip install
 
 pip install mujoco-py==2.1.2.14
 
@@ -122,18 +122,30 @@ if __name__=="__main__":
     main()
 ~~~
 
-上手くいくと、4脚のアリがバタバタする動画がでる。
+上手くいくと、4脚のアリがバタバタする動画がでます。
 
 
 # エラーの解消
 
 ## Visual C ++ がないとき
 
-↓こちらのリンクをクリックします。
+おそらくほとんどの人が以下のエラーが発生します。
+
+~~~
+error: Microsoft Visual C++ 14.0 or greater is required. Get it with "Microsoft C++ Build Tools": https://visualstudio.microsoft.com/visual-cpp-build-tools/
+~~~
+
+これはC++のビルドツールがないエラーなので、インストールしていきます。
+
+※Visual StudioをインストールするとC++のビルドツールが一緒に入ってきます。
+
+※C++ビルドツールだけインストールすることもできますが、うまくいかなかったのでVisual Studioごと入れたほうが無難です。
+
+↓こちらのリンクをクリックし、「Visual Studio」をダウンロードします。
 
 https://visualstudio.microsoft.com/ja/thank-you-downloading-visual-studio/?sku=Community&channel=Release&version=VS2022&source=VSLandingPage&passive=false&cid=2030
 
-自動でダウンロードされます。
+クリックすると自動でダウンロードされます。
 
 ダウンロードが完了したら vs_community_XXXXXXXXXXXX.exeをクリックしてインストールします。
 
