@@ -52,7 +52,27 @@ https://www.roboti.us/license.html
 
 「Activation Key」をクリックしてアクセスキーをダウンロードします。
 
-## 
+<img src="img/access_key.png" width=720>
+
+## 6. ライセンスキーの配置
+
+ダウンロードしたライセンスキーを.mujocoフォルダに移動します。
+
+<img src="img/move_access_key.png" width=720>
+
+## 7. mujocoのパスを通す
+
+mujocoのパスをパソコンの環境設定に登録していきます。
+
+### 7.1 環境設定画面を開く
+
+「環境」と検索し、
+「環境変数を変更」パネルを開きます。
+
+<img src="img/setting_env_1.png" width=720>
+
+
+
 
 ## 7. mujoco-pyのpip install
 
@@ -60,9 +80,9 @@ pip install mujoco-py==2.1.2.14
 
 ## 一旦テストプログラムを動かしてみる
 
-ほぼ100%エラーが出るが一旦動かしてみる。
+ほぼ100%エラーが出ると思いますが一旦動かしてみます。
 
-(パソコンでアプリのビルドとかしたことある人とかなら1発でいけるかもしれないから)
+(パソコンでアプリのビルドとかしたことある人とかなら1発でいけるかもしれない)
 
 ~~~
 import gym
