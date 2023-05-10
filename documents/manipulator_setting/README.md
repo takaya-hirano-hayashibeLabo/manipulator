@@ -45,3 +45,7 @@ Write the following to "~\anaconda3\envs\manipulator\lib\python3.8\site-packages
 from gym.envs.mujoco.kinova import KinovaEnv
 
 <img src="imgs/img2.2.png" width=720>
+
+## 3 Run test.py
+
+Type "python test.py" at at the commandprompt.
