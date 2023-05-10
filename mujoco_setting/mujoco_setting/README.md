@@ -71,6 +71,12 @@ mujocoのパスをパソコンの環境設定に登録していきます。
 
 <img src="img/setting_env_1.png" width=720>
 
+### 7.2 環境パス編集画面を開く
+
+次に「ユーザー環境変数」の「path」を選択します。
+その後、「編集」をクリックします。
+
+<img src="img/open_path_edditer.png" width=720>
 
 
 
