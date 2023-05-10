@@ -9,3 +9,15 @@ gymをいれたら、次にmujocoを入れます。
 ↓こちらのリンクにアクセスします。
 
 https://www.roboti.us/download.html
+
+「mujoco200_win64」をダウンロードします。(どこでもいい)
+
+## 2. .mujocoフォルダの作成
+
+
+## mujocoのライセンスキーの取得
+
+↓こちらのリンクにアクセスします。
+
+https://www.roboti.us/license.html
+
