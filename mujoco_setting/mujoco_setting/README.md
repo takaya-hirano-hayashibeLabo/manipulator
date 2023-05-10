@@ -8,5 +8,4 @@ gymをいれたら、次にmujocoを入れます。
 
 ↓こちらのリンクにアクセスします。
 
-https://github.com/deepmind/mujoco/releases 
-
+https://www.roboti.us/download.html
