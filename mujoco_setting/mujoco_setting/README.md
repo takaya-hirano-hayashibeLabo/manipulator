@@ -78,6 +78,17 @@ mujocoのパスをパソコンの環境設定に登録していきます。
 
 <img src="img/open_path_edditer.png" width=720>
 
+## 7.3 パスの追加
+
+「新規」ボタンをクリックし、
+
+~~~
+C:\Users\{ユーザーネーム}\.mujoco\mujoco210\bin
+~~~
+
+を追加し、「OK」をクリックします。
+
+<img src="img/add_mujoco_path.png" width=720>
 
 
 ## 7. mujoco-pyのpip install
@@ -90,7 +101,7 @@ pip install mujoco-py==2.1.2.14
 
 (パソコンでアプリのビルドとかしたことある人とかなら1発でいけるかもしれない)
 
-~~~
+~~~python
 import gym
 import time
 
