@@ -30,7 +30,7 @@ powershellを開いている場合は、comandpromptを選びます
 コマンドプロンプトに以下を入力します
 
 ~~~
-C:\Users\{ユーザー名}\anaconda3\Scripts\acitvate
+C:\Users\{ユーザー名}\anaconda3\Scripts\activate
 ~~~
 
 ### 1.4 仮想環境を作る&activate
