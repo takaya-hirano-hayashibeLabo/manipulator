@@ -14,7 +14,7 @@
 |$x\_{target}$|アームの目標位置|
 |${\theta}$|関節角度 [ ${\theta}\_{0} , {\theta}\_{1} , {\theta}\_{2}$ ] |
 
-課題では,$x\_{end}$が$x\_{target}$に近づくような関節角速度$\dot{\theta}$を計算するコードを書きます。
+課題では, $x\_{end}$ が$x\_{target}$に近づくような関節角速度$\dot{\theta}$を計算するコードを書きます。
 
 <img src="imgs/arm_constraints.png" width=500>
 
