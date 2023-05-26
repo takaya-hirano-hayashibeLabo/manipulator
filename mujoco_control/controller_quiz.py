@@ -50,7 +50,7 @@ class Controller():
         x_vel=self.pd_control(x_target=np.array(x_target),x_end=np.array(x_end),kp=kp,kd=kd) #PD制御で必要な手先の速度を計算
         theta_vel=self.to_joint_velocity(x_vel=np.array(x_vel),theta=np.array(theta)) #ヤコビアンを使って手先の速度を関節角速度に変換
 
-        if is_view: #描画用に関節位置の保存
+        if is_view: #描画用に関節位置の保存.気にしなくていい
             self._save_joint_for_view(theta=theta)
 
         return np.array(theta_vel)
@@ -61,9 +61,7 @@ class Controller():
         今の角度から手先の位置を計算する関数
 
         :param theta: 今の角度 [θ0,θ1,θ2] (根本の方0,手先の方2)
-        :type theta: numpy.ndarray
         :return x_end: 手先の位置 [x,y]
-        :type x_end:numpy.ndarray
         """
 
         ##ここに今の関節角から手先の位置'x_end'を求めるプログラムを書く
@@ -92,7 +90,7 @@ class Controller():
         e_vel=(e-self.e_prev)/self.dt #手先誤差の速度
         self.e_prev=deepcopy(e) #手先誤差の記憶
 
-        x_vel=kp*e+kd*e_vel
+        x_vel=kp*e+kd*e_vel #PD制御
 
         return x_vel
 
@@ -138,6 +136,7 @@ class Controller():
 def test():
     """
     上手くコントローラークラスができてるかのテストプログラム
+    ここはいじらなくて大丈夫
     """
 
     ##アニメーション用
