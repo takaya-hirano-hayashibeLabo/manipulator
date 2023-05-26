@@ -173,3 +173,12 @@ https://visualstudio.microsoft.com/ja/thank-you-downloading-visual-studio/?sku=C
 そこそこ時間がかかるのでしばらく待ちましょう。
 
 インストールが完了したら再起動し、もう一度テストプログラムを実行しましょう。
+
+
+## LINKエラーみたいなのが出たとき
+
+1/3位の確率で発生します。
+
+この場合は、githubからmujoco-pyのソースコードを自分でダウンロードして、
+buildする必要があります。
+
