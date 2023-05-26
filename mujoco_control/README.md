@@ -40,8 +40,8 @@
 
 ### Controllerクラスについて
 
-**controller_quiz.py**にはあらかじめロボットアームを制御する用のContollerクラスが用意してあります。  
-Contollerクラスの関数は以下のようになっています。
+**controller_quiz.py**にはあらかじめロボットアームを制御する用のControllerクラスが用意してあります。  
+Controllerクラスの関数は以下のようになっています。
 
 **Controller**
 |関数名|役割|
@@ -56,7 +56,7 @@ Contollerクラスの関数は以下のようになっています。
 <img src="imgs/block_fig.png" width=900>
 
 
-### 課題
+### 課題の条件
 
 課題はforward_kinematicsとto_joint_velocityにそれぞれの処理を行うコードを記述することです。
 
@@ -77,4 +77,22 @@ Contollerクラスの関数は以下のようになっています。
 :---:|:---:|:---:
 |入力|$\dot{x\_{end}}$|手先の速度リスト [ ${v_x}, {v_y}$ ]|
 ||${\theta}$|各関節角のリスト [ ${\theta}\_{0}, {\theta}\_{1}, {\theta}\_{2}$ ]の順で入力|
-|出力|$\dot{\theta}$|各関節の角速度 [ ${\theta}\_{0}, {\theta}\_{1}, {\theta}\_{2}$ ]の順で出力|
+|出力|$\dot{\theta}$|各関節の角速度 [ $\dot{{\theta}\_{0}}, \dot{{\theta}\_{1},} \dot{{\theta}\_{2}}$ ]の順で出力|
+
+
+## コードの実行について
+
+ライブラリとして~numpy~が必要になります。  
+仮想環境に入っていない場合は以下のコマンドでインストールしましょう。  
+~~~
+pip install numpy
+~~~
+
+また、コードは以下のように実行できます。  
+~~~
+python controller_quiz.py
+~~~
+
+こちらのような動画が出力されれば成功です。
+
+<img src="imgs/ani.gif" width=600>
