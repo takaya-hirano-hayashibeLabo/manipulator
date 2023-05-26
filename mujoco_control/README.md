@@ -10,11 +10,11 @@
 
 |変数|役割|
 :---:|:---:
-|$x\_{end}$|アームの手先|
-|$x\_{target}$|アームの目標位置|
-|${\theta}$|関節角度 [ ${\theta}\_{0} , {\theta}\_{1} , {\theta}\_{2}$ ] |
+| $ x\_{end} $ |アームの手先|
+| $ x\_{target} $ |アームの目標位置|
+| $ {\theta} $ |関節角度 [  $ {\theta}\_{0} , {\theta}\_{1} , {\theta}\_{2} $  ] |
 
-課題では, $x\_{end}$ が$x\_{target}$に近づくような関節角速度$\dot{\theta}$を計算するコードを書きます。
+課題では,  $ x\_{end} $  が $ x\_{target} $ に近づくような関節角速度 $ \dot{\theta} $ を計算するコードを書きます。
 
 <img src="imgs/arm_constraints.png" width=500>
 
@@ -23,10 +23,10 @@
 
 アームの制御は以下の流れで行います。
 
-1. 運動学によって現在の関節角度${\theta}$を現在の手先位置$x\_{end}$に変換
-1. 目標位置$x\_{target}$と$x\_{end}$の差${e}$をもとに、PD制御によって手先速度$\dot{x\_{end}}$を求める
-1. ヤコビアンを使って$\dot{x\_{end}}$から関節角速度$\dot{\theta}$を求める
-1. $\dot{\theta}$で現在の${\theta}$を更新し、1にもどる
+1. 運動学によって現在の関節角度 $ {\theta} $ を現在の手先位置 $ x\_{end} $ に変換
+1. 目標位置 $ x\_{target} $ と $ x\_{end} $ の差 $ {e} $ をもとに、PD制御によって手先速度 $ \dot{x\_{end}} $ を求める
+1. ヤコビアンを使って $ \dot{x\_{end}} $ から関節角速度 $ \dot{\theta} $ を求める
+1.  $ \dot{\theta} $ で現在の $ {\theta} $ を更新し、1にもどる
 
 皆さんには、**1と3の処理を行うコード**を書いてもらいます。
 
@@ -46,10 +46,10 @@ Contollerクラスの関数は以下のようになっています。
 **Controller**
 |関数名|役割|
 :---:|:---:
-|forward\_kinematics(${\theta}$)|運動学で${\theta}$から$x\_{end}$を計算. 処理の1相当|
-|pd\_control($x\_{target},x\_{end},kp,kd$)|PD制御で$\dot{x\_{end}}$を計算. 処理の2相当|
-|to\_joint\_velocity($\dot{x\_{end}}, {\theta}$)|ヤコビ行列を用いて$\dot{\theta}$を計算. 処理3に相当|
-|control(${\theta},x\_{target},kp,kd$)|処理の1,2,3を一気に行う関数. 制御の際にはこの関数だけ使えばok|
+|forward\_kinematics( $ {\theta} $ )|運動学で $ {\theta} $ から $ x\_{end} $ を計算. 処理の1相当|
+|pd\_control( $ x\_{target},x\_{end},kp,kd $ )|PD制御で $ \dot{x\_{end}} $ を計算. 処理の2相当|
+|to\_joint\_velocity( $ \dot{x\_{end}}, {\theta} $ )|ヤコビ行列を用いて $ \dot{\theta} $ を計算. 処理3に相当|
+|control( $ {\theta},x\_{target},kp,kd $ )|処理の1,2,3を一気に行う関数. 制御の際にはこの関数だけ使えばok|
 
 また、ブロック線図と関数の対応は以下のようになっています。
 
