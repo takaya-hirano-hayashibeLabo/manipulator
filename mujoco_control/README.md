@@ -93,6 +93,7 @@ pip install numpy
 python controller_quiz.py
 ~~~
 
-こちらのような動画が出力されれば成功です。
+こちらのような動画が出力されれば成功です。  
+(※課題の処理を追加する前は,ロボットアームは動きません)
 
 <img src="imgs/ani.gif" width=600>
