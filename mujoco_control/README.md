@@ -30,7 +30,7 @@
 
 皆さんには、**1と3の処理を行うコード**を書いてもらいます。
 
-<img src="imgs/block_fig1.png" width=500>
+<img src="imgs/block_fig1.png" width=900>
 
 
 ## 課題について
@@ -40,17 +40,17 @@
 
 ### Controllerクラスについて
 
-**controller\_quiz.py**にはあらかじめロボットアームを制御する用のContollerクラスが用意してあります。  
+**controller_quiz.py**にはあらかじめロボットアームを制御する用のContollerクラスが用意してあります。  
 Contollerクラスの関数は以下のようになっています。
 
 **Controller**
 |関数名|役割|
 :---:|:---:
-|forward\_kinematics( $ {\theta} $ )|運動学で $ {\theta} $ から $ x\_{end} $ を計算. 処理の1相当|
-|pd\_control( $ x\_{target},x\_{end},kp,kd $ )|PD制御で $ \dot{x\_{end}} $ を計算. 処理の2相当|
-|to\_joint\_velocity( $ \dot{x\_{end}}, {\theta} $ )|ヤコビ行列を用いて $ \dot{\theta} $ を計算. 処理3に相当|
-|control( $ {\theta},x\_{target},kp,kd $ )|処理の1,2,3を一気に行う関数. 制御の際にはこの関数だけ使えばok|
+|forward_kinematics( ${\theta}$ )|運動学で ${\theta}$ から $x\_{end}$ を計算. 処理の1相当|
+|pd_control( $x\_{target},x\_{end},kp,kd$ )|PD制御で $\dot{x\_{end}}$ を計算. 処理の2相当|
+|to_joint_velocity( $\dot{x\_{end}}, {\theta}$ )|ヤコビ行列を用いて $\dot{\theta}$ を計算. 処理3に相当|
+|control( ${\theta},x\_{target},kp,kd$ )|処理の1,2,3を一気に行う関数. 制御の際にはこの関数だけ使えばok|
 
 また、ブロック線図と関数の対応は以下のようになっています。
 
-<img src="imgs/block_fig.png" width=500>
+<img src="imgs/block_fig.png" width=900>
