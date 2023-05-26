@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
-
 # マニピュレーター会課題
 
 「目標位置」と「今の関節角度」からヤコビ行列を使って、「必要な各関節の速度」を計算するコードを書こう
@@ -14,7 +12,7 @@
 :---:|:---:
 |$x_{end}$|アームの手先|
 |$x_{target}$|アームの目標位置|
-|${\theta}$|関節角度 [ $${\theta}_{0} {\theta}_{1} {\theta}_{2}$$ ] |
+|${\theta}$|関節角度 [ $${\theta}\_{0} {\theta}\_{1} {\theta}\_{2}$$ ] |
 
 課題では,$x_{end}$が$x_{target}$に近づくような関節角速度$\dot{\theta}$を計算するコードを書きます。
 
