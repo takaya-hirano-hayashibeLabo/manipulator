@@ -104,9 +104,9 @@ class Controller():
         """
 
         ##ここに「PD制御で計算した手先のxy速度'x_vel'」と「今の関節角度'theta'」から「関節角速度'theta_vel'」を求めるコードを書く
-        ## 'theta_vel'はリストで[根本のジョイント角速度,真ん中のジョイント角速度,手先側のジョイント角速度]を返すようにする
+        ## 'theta_vel'はリストで[根本のジョイント角速度,真ん中のジョイント角速度,手先側のジョイント角速度]の順に返すようにする
         
-        theta_vel=([0,0,0]) #←消してok
+        theta_vel=[0,0,0] #←消してok
         
         ##
 
@@ -124,12 +124,10 @@ class Controller():
         x_joint2=x_joint1+self.L2*np.array([np.sin(theta[0]+theta[1]),np.cos(theta[0]+theta[1])]) 
         x_end=x_joint2+self.L3*np.array([np.sin(theta[0]+theta[1]+theta[2]),np.cos(theta[0]+theta[1]+theta[2])])
 
-        ##描画用に保存してるだけ
         self.joint_vec["joint0"]=x_joint0
         self.joint_vec["joint1"]=x_joint1
         self.joint_vec["joint2"]=x_joint2
         self.joint_vec["endeffector"]=x_end
-        ##
 
 
 
@@ -137,6 +135,7 @@ def test():
     """
     上手くコントローラークラスができてるかのテストプログラム
     ここはいじらなくて大丈夫
+    初期角度とかターゲット位置とかをいじりたければいじってもOK
     """
 
     ##アニメーション用
@@ -158,7 +157,11 @@ def test():
     loop_num=100
     for t in range(loop_num):
 
-        theta_vel=controller.control(theta=theta,x_target=x_target,kp=3,kd=0.1) #必要な角速度の計算
+        #必要な角速度の計算
+        theta_vel=controller.control(
+            theta=theta,x_target=x_target,
+            kp=3,kd=0.1
+            ) 
         theta+=np.array(theta_vel)*dt #アームの角度の更新
 
         ##アニメーションしてるだけ
