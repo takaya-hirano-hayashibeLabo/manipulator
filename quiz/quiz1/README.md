@@ -82,10 +82,11 @@ Controllerクラスの関数は以下のようになっています。
 
 ## コードの実行について
 
-ライブラリとしてnumpyが必要になります。  
+ライブラリとしてnumpyとmatplotlibが必要になります。  
 仮想環境に入っていない場合は以下のコマンドでインストールしましょう。  
 ~~~
 pip install numpy
+pip install matplotlib
 ~~~
 
 また、コードは以下のように実行できます。  
