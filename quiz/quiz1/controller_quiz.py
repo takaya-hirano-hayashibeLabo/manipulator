@@ -139,6 +139,8 @@ def test():
     """
 
     ##アニメーション用
+    from pathlib import Path
+    PARENT=str(Path(__file__).parent)
     import matplotlib.pyplot as plt
     from matplotlib.animation import ArtistAnimation
     fig=plt.figure()
@@ -176,6 +178,7 @@ def test():
         
     
     ani=ArtistAnimation(fig=fig,artists=frames,interval=100)
+    ani.save(f"{PARENT}/arm_control_ani.gif",writer="pillow")
     plt.show()
 
 
